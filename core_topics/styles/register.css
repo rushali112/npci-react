@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Center the main content */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form container */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form styles */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Input and Select field styles */
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+/* Input focus effect */
+input:focus, select:focus {
+    border-color: #007bff;
+}
+
+/* Submit and Reset button styles */
+input[type="submit"], input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: orange;
+    color: #fff;
+}
+
+input[type="reset"] {
+    background-color: orange;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"]:hover {
+    background-color: #999;
+}
+
+
+
+/* Add space between form fields */
+div {
+    margin-bottom: 15px;
+}
+
+/* Style the data list options */
+datalist {
+    padding: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+        max-width: 90%;
+    }
+    
+    input[type="submit"], input[type="reset"] {
+        width: 100%;
+        margin-top: 15px;
+    }
+}

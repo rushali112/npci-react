@@ -1,0 +1,149 @@
+(header>nav)+main+footer-> creatinh header , main, footer
+h1#mainHeading -> for creating heading
+
+ul>(li>a[href])*4
+section#container 
+table>thead>tr>th*4
+tbody>(tr>td*4)*5
+
+_blank -> opens new tab
+div>label+input[type='']
+
+div.container>div.box*3
+
+event driven
+object driven
+functional
+
+-------------------------------------------------
+
+
+let,const
+
+let: Variables declared with let can be reassigned to a new value. This means you can change the value stored in the variable later in the code.
+
+javascript
+Copy
+let a = 10;
+a = 20; // valid, reassignment is allowed
+console.log(a); // 20
+const: Variables declared with const cannot be reassigned after their initial value has been set. Once a const variable is assigned a value, you cannot assign a new value to it.
+
+javascript
+Copy
+const b = 30;
+b = 40; // Error: Assignment to constant variable.
+
+
+Reassignable	Yes	No
+Mutability of objects	Can mutate objects/arrays	Can mutate objects/arrays
+Re-declaration in the same scope	Not allowed	Not allowed
+Hoisting behavior	Hoisted but not initialized	Hoisted but not initialized
+Use case	When value changes	When value remains constant
+
+Variables declared with var are function-scoped or globally scoped
+-----------------------
+
+functions
+Function Declaration
+Function Expression
+Arrow Function Expression
+Anonymous Function
+Immediately Invoked Function Expression (IIFE)
+Function Constructor
+
+Function Declaration (Function Statement)
+A standard way to declare a function using the function keyword.
+
+javascript
+Copy
+function greet() {
+  console.log("Hello, World!");
+}
+2. Function Expression
+Functions can be defined as expressions and assigned to variables. This is useful for anonymous functions.
+
+javascript
+Copy
+const greet = function() {
+  console.log("Hello, World!");
+};
+3. Arrow Function Expression
+A concise way to define functions using the arrow => syntax, introduced in ES6. Arrow functions are often used for short functions and callbacks.
+
+javascript
+Copy
+const greet = () => {
+  console.log("Hello, World!");
+};
+4. Anonymous Function
+An anonymous function is a function without a name, often used as an argument to other functions or for immediate execution.
+
+javascript
+Copy
+setTimeout(function() {
+  console.log("This is an anonymous function!");
+}, 1000);
+5. Immediately Invoked Function Expression (IIFE)
+An IIFE is a function that is defined and called immediately after its declaration, typically used for creating isolated scopes.
+
+javascript
+Copy
+(function() {
+  console.log("This function runs immediately!");
+})();
+6. Function Constructor
+Functions can also be created dynamically using the Function constructor, though this is generally not recommended due to performance and security concerns.
+
+javascript
+Copy
+const greet = new Function('name', 'console.log("Hello, " + name);');
+greet("Alice");
+
+events
+------------
+array
+Using Array Literals (Recommended):
+
+javascript
+Copy
+let fruits = ["apple", "banana", "cherry"];
+Using the Array Constructor:
+
+javascript
+Copy
+let fruits = new Array("apple", "banana", "cherry");
+
+------------------------
+
+
+objects
+In JavaScript, objects are a fundamental data type used to store collections of data in key-value pairs. An object allows you to group related data together, making it easier to organize and manipulate complex data.
+
+Key Features of Objects in JavaScript:
+Key-Value Pairs: Objects consist of keys (also known as properties) and values. The keys are always strings (or symbols), and the values can be any valid JavaScript data type (e.g., numbers, strings, arrays, other objects, functions, etc.).
+
+Unordered: Unlike arrays, which are ordered collections, objects are unordered, meaning the properties do not have a specific order. The keys are unique within an object.
+
+Dynamic: Objects are dynamic, which means you can add, modify, or delete properties at any time.
+
+Creating an Object
+You can create an object in two main ways:
+
+Using Object Literal Syntax (Recommended):
+
+javascript
+Copy
+let person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+Using the new Object() Syntax:
+
+javascript
+Copy
+let person = new Object();
+person.name = "John";
+person.age = 30;
+person.city = "New York";

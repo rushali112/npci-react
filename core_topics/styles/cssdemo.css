@@ -1,0 +1,15 @@
+.outer{
+    width: 40%;
+    height: 100px;
+    border: 1px solid red;
+    color: red;
+}
+.inner{
+    width: 20%;
+    height: 50px;
+    border: inherit;
+}
+.child{
+    font-size: 1.8em !important;
+    color: blueviolet ;
+}

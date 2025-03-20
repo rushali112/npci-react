@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./core_topics/styles/register.css">
+</head>
+<body>
+    <h1>Registration Page</h1> 
+    <datalist id="places">
+        <option>Navalur</option>
+        <option>Siruseri</option>
+        <option>Padur</option>
+        <option>Sipcot</option>
+    </datalist>
+   <!-- Heading visible now -->
+    <main>
+        <form action="login.html" method="post">
+            <div><label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter First Name">
+            </div>
+            <div><label for="lastname">Last Name</label>
+                <input type="lastname" required id="lastname" name="lastname" placeholder="Enter Last Name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="pref-vehicle">Preferred Vehicle</label>
+                <select name="pref-vehicle" id="pref-vehicle">
+                    <option value="car">Car</option>
+                    <option value="van">Van</option>
+                    <option value="bus">Bus</option>
+                </select>
+            </div>
+            <div>
+                <label for="pref-package">Preferred Package</label>
+                <select name="pref-package" id="pref-package">
+                    <option value="basic">Basic</option>
+                    <option value="premium">Premium</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+            <div>
+                <label for="tour-date">Tour Date</label>
+                <input type="date" name="tour-date" id="tour-date" required>
+            </div>
+            <div>
+                <label for="tour-time">Tour Time</label>
+                <input type="time" name="tour-time" id="tour-time" required>
+            </div>
+            <div>
+                <label for="pickup-location">Pick-up Location</label>
+                <input type="text" list="places" name="pickup" id="pickup">
+            </div>
+            <div>
+                <input type="Submit" value="Submit">
+                <input type="Reset" value="Reset">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
